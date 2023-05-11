@@ -15,7 +15,7 @@ Además, utilizaremos Python, un lenguaje de programación que es ampliamente ut
 ## 1. Clonar o descargar el repositorio
 
 ```
-git@github.com:josdanind/manual_postgrest.git
+git clone git@github.com:josdanind/manual_postgrest.git
 ```
 
 ## 2. Levantar contenedor de Postgresql
