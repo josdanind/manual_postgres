@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+    postgres_cf:
+        container_name: db_course
+        build: .
+        restart: always
+        environment:
+          - TZ=America/Bogota
+          - POSTGRES_PASSWORD=${DB_PASS}
+          - POSTGRES_USER=${DB_USER}
+          - POSTGRES_DB=${DB_NAME}
+        ports:
+          - '5432:5432'
+        volumes:
+          - ./sql:/home/root/sql
